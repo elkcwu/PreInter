@@ -5,7 +5,7 @@ public class twoMaxNum {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //		int [] numList = {2};
-		int [] numList = {2,5,1,9, -2, 7, -7};
+		int [] numList = {-2,-5,1,-9, -2, 7, -7};
 		twoMaxNums(numList);
 		maxAndMin(numList);
 		
@@ -15,17 +15,23 @@ public class twoMaxNum {
 		if(numList.length <= 1)
 			return;
 		
-		int max1 = 0, max2 = 0;
-		for(int num : numList){
-			if(num > max1){
+//		int max1 = 0, max2 = 0;  //totally wrong	
+		//should initialize with the first value
+		int max1 = numList[0], max2=numList[0], max3= numList[0];
+		for(int i = 1; i<numList.length; i++){
+			if(numList[i]>max1){
+				max3 = max2;
 				max2 = max1;
-				max1 = num;
-			}else if(num > max2){
-			    max2 = num;
+				max1 = numList[i];
+			}else if(numList[i]>max2){
+				max3 = max2;
+				max2 = numList[i];
+			}else if(numList[i]>max3){
+				max3 = numList[i];
 			}
 		}
-		
-		System.out.println("max1 is : " + max1 + " max2 is : " + max2);
+				
+		System.out.println("max1 is : " + max1 + " max2 is : " + max2  + " max3 is: " + max3);
 	}
 	
 	private static void maxAndMin(int[] numList){
