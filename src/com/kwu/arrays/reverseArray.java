@@ -11,7 +11,7 @@ public class reverseArray {
 		
 	}
 	//Reverse an array in-place, without using an additional buffer.
-	//O(n/2) or O(n)
+	//O(n/2) or time complexity: O(n), space complexity is O(1)
 	public static String reverseTheArray(int[] arr1){
 		if(arr1 == null || arr1.length<2)
 			return arr1.toString();

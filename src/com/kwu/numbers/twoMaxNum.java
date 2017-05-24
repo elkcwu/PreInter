@@ -1,5 +1,8 @@
 package com.kwu.numbers;
 
+// no sorting
+
+
 public class twoMaxNum {
 
 	public static void main(String[] args) {
@@ -10,7 +13,7 @@ public class twoMaxNum {
 		maxAndMin(numList);
 		
 	}
-
+	//how to find the SECOND largest number in an array
 	private static void twoMaxNums(int[] numList) {
 		if(numList.length <= 1)
 			return;
@@ -34,6 +37,8 @@ public class twoMaxNum {
 		System.out.println("max1 is : " + max1 + " max2 is : " + max2  + " max3 is: " + max3);
 	}
 	
+	
+	//how to find the largest and smallest number in an array without sorting?
 	private static void maxAndMin(int[] numList){
 		if(numList.length <= 1)
 			return;
