@@ -32,7 +32,7 @@ public class SumOfTwoNumber {
 		
 		
 		//this one use HashMap
-		public static vid sumOfTwoNumberWithMap(int[] intArr, int sum){
+		public static void sumOfTwoNumberWithMap(int[] intArr, int sum){
 			
 			
 		}
