@@ -12,12 +12,12 @@ public class SumOfTwoNumber {
 			
 		}
 		
+		//this one use Set
 		public static void sumOfTwoNum(int[] intArr, int sum){
 			if(intArr.length<2){
 				return;
 			}
-		
-			
+					
 			Set<Integer> arrSet = new HashSet<Integer>();
 			for(int i : intArr){
 				int target = sum - i;
@@ -27,6 +27,13 @@ public class SumOfTwoNumber {
 					System.out.println("nums is: " + target + " and " + i);
 				}
 			}
+			
+		}
+		
+		
+		//this one use HashMap
+		public static void sumOfTwoNumberWithMap(int[] intArr, int sum){
+			
 			
 		}
 }
